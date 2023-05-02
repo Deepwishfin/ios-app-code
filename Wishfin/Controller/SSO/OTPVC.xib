@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OTPVC" customModule="Wishfin" customModuleProvider="target">
+            <connections>
+                <outlet property="backOtpButton" destination="EHo-Pe-wSF" id="lTH-yN-o4u"/>
+                <outlet property="continueButton" destination="6dM-xJ-C7A" id="yjd-PA-6qi"/>
+                <outlet property="firstTextField" destination="OsV-q4-0kA" id="lTq-4w-X27"/>
+                <outlet property="forthTextField" destination="LY9-LJ-vSc" id="mWG-1m-uti"/>
+                <outlet property="otpLabel" destination="l5N-dU-k3q" id="6DE-XJ-HdD"/>
+                <outlet property="otpView" destination="sMm-xM-gtV" id="YNu-1a-Ril"/>
+                <outlet property="resendOtpButton" destination="Chx-M2-KPa" id="DQM-IM-yz7"/>
+                <outlet property="secondTextField" destination="rP3-OD-sdL" id="yfq-Y5-Rd7"/>
+                <outlet property="thirdTextField" destination="uTr-a0-lci" id="psC-nx-yr6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter OTP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGV-Aq-nZw">
+                    <rect key="frame" x="15" y="58" width="96.5" height="28"/>
+                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="20"/>
+                    <color key="textColor" red="0.18823529411764706" green="0.25882352941176467" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We have sent an otp on ********89" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5N-dU-k3q">
+                    <rect key="frame" x="15" y="92" width="190" height="15.5"/>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="11"/>
+                    <color key="textColor" red="0.18823529411764706" green="0.25882352941176467" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sMm-xM-gtV">
+                    <rect key="frame" x="15" y="140.5" width="345" height="245"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OsV-q4-0kA">
+                            <rect key="frame" x="37" y="32" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="OsV-q4-0kA" secondAttribute="height" multiplier="16:16" id="EQx-vC-a4m"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES" textContentType="one-time-code"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="qWT-vw-Bns"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rP3-OD-sdL">
+                            <rect key="frame" x="112" y="32" width="48" height="48"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES" textContentType="one-time-code"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="3Sd-oW-WGD"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uTr-a0-lci">
+                            <rect key="frame" x="187" y="32" width="48" height="48"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES" textContentType="one-time-code"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="nQd-4a-Ex5"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LY9-LJ-vSc">
+                            <rect key="frame" x="262" y="32" width="48" height="48"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES" textContentType="one-time-code"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="t7g-7p-t3R"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dM-xJ-C7A">
+                            <rect key="frame" x="25" y="112" width="295" height="44"/>
+                            <color key="backgroundColor" red="0.0" green="0.74117647058823533" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="nn6-36-mww"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>
+                            <state key="normal" title="CONTINUE">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="continueBtnClicked:" destination="-1" eventType="touchUpInside" id="Dn7-Y1-sif"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chx-M2-KPa">
+                            <rect key="frame" x="131" y="189" width="83" height="32"/>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                            <state key="normal" title="Resend OTP">
+                                <color key="titleColor" red="1" green="0.5725490196078431" blue="0.1764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="resendBtnClicked:" destination="-1" eventType="touchUpInside" id="8gB-So-q0G"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="uTr-a0-lci" firstAttribute="centerY" secondItem="rP3-OD-sdL" secondAttribute="centerY" id="1BP-zj-TAm"/>
+                        <constraint firstItem="LY9-LJ-vSc" firstAttribute="height" secondItem="uTr-a0-lci" secondAttribute="height" id="1WA-o6-YVO"/>
+                        <constraint firstItem="uTr-a0-lci" firstAttribute="width" secondItem="rP3-OD-sdL" secondAttribute="width" id="3GO-jo-u5l"/>
+                        <constraint firstItem="uTr-a0-lci" firstAttribute="leading" secondItem="rP3-OD-sdL" secondAttribute="trailing" constant="27" id="3PL-SC-kN4"/>
+                        <constraint firstItem="rP3-OD-sdL" firstAttribute="centerY" secondItem="OsV-q4-0kA" secondAttribute="centerY" id="9o9-Xq-efK"/>
+                        <constraint firstAttribute="height" constant="245" id="BNp-zU-vIi"/>
+                        <constraint firstItem="rP3-OD-sdL" firstAttribute="width" secondItem="OsV-q4-0kA" secondAttribute="width" id="D3z-J2-xco"/>
+                        <constraint firstItem="LY9-LJ-vSc" firstAttribute="centerY" secondItem="uTr-a0-lci" secondAttribute="centerY" id="DIY-DO-Zds"/>
+                        <constraint firstItem="LY9-LJ-vSc" firstAttribute="width" secondItem="uTr-a0-lci" secondAttribute="width" id="EVT-sr-u3s"/>
+                        <constraint firstItem="Chx-M2-KPa" firstAttribute="top" secondItem="6dM-xJ-C7A" secondAttribute="bottom" constant="33" id="IBM-fS-XNl"/>
+                        <constraint firstItem="OsV-q4-0kA" firstAttribute="top" secondItem="sMm-xM-gtV" secondAttribute="top" constant="32" id="Q0I-EO-XeL"/>
+                        <constraint firstItem="LY9-LJ-vSc" firstAttribute="leading" secondItem="uTr-a0-lci" secondAttribute="trailing" constant="27" id="UOt-GN-1eo"/>
+                        <constraint firstItem="uTr-a0-lci" firstAttribute="height" secondItem="rP3-OD-sdL" secondAttribute="height" id="Zi8-f8-Uwq"/>
+                        <constraint firstItem="6dM-xJ-C7A" firstAttribute="leading" secondItem="sMm-xM-gtV" secondAttribute="leading" constant="25" id="bLN-cY-RtV"/>
+                        <constraint firstItem="Chx-M2-KPa" firstAttribute="centerX" secondItem="6dM-xJ-C7A" secondAttribute="centerX" id="bMy-8d-Ji6"/>
+                        <constraint firstItem="OsV-q4-0kA" firstAttribute="leading" secondItem="sMm-xM-gtV" secondAttribute="leading" constant="37" id="eXJ-95-Agr"/>
+                        <constraint firstItem="rP3-OD-sdL" firstAttribute="leading" secondItem="OsV-q4-0kA" secondAttribute="trailing" constant="27" id="f4l-EZ-dWp"/>
+                        <constraint firstItem="rP3-OD-sdL" firstAttribute="height" secondItem="OsV-q4-0kA" secondAttribute="height" id="gLF-0i-jMP"/>
+                        <constraint firstAttribute="trailing" secondItem="6dM-xJ-C7A" secondAttribute="trailing" constant="25" id="gWI-Ca-xuf"/>
+                        <constraint firstAttribute="trailing" secondItem="LY9-LJ-vSc" secondAttribute="trailing" constant="35" id="grl-0p-WI0"/>
+                        <constraint firstItem="6dM-xJ-C7A" firstAttribute="top" secondItem="OsV-q4-0kA" secondAttribute="bottom" constant="32" id="lYm-pi-bhM"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHo-Pe-wSF">
+                    <rect key="frame" x="16" y="16" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="KFm-kg-H7R"/>
+                        <constraint firstAttribute="width" constant="32" id="Msg-3e-XUe"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="back"/>
+                    <connections>
+                        <action selector="backBtnClicked:" destination="-1" eventType="touchUpInside" id="pDH-ZF-d9h"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="l5N-dU-k3q" firstAttribute="top" secondItem="cGV-Aq-nZw" secondAttribute="bottom" constant="6" id="5DK-zx-k5S"/>
+                <constraint firstItem="cGV-Aq-nZw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="Irz-UN-lFi"/>
+                <constraint firstItem="l5N-dU-k3q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="TeD-hV-ikr"/>
+                <constraint firstItem="sMm-xM-gtV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="XG9-Mt-zwX"/>
+                <constraint firstItem="EHo-Pe-wSF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Znl-Bj-hPI"/>
+                <constraint firstItem="cGV-Aq-nZw" firstAttribute="top" secondItem="EHo-Pe-wSF" secondAttribute="bottom" constant="10" id="d5N-xq-I0M"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sMm-xM-gtV" secondAttribute="trailing" constant="15" id="iqK-yp-zAf"/>
+                <constraint firstItem="sMm-xM-gtV" firstAttribute="top" secondItem="l5N-dU-k3q" secondAttribute="bottom" constant="33" id="nmq-ii-ytp"/>
+                <constraint firstItem="EHo-Pe-wSF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="sWE-0S-EpH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="128.18590704647679"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="64" height="64"/>
+    </resources>
+</document>

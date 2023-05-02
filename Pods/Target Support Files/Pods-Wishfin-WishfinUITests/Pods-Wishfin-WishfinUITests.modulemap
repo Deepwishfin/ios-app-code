@@ -1,0 +1,6 @@
+framework module Pods_Wishfin_WishfinUITests {
+  umbrella header "Pods-Wishfin-WishfinUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

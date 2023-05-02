@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpdateInfoView" customModule="Wishfin" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomView" destination="1kb-53-Nmf" id="Ayv-O5-05f"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="4H2-fN-5UU"/>
+                <outlet property="updateButton" destination="NK6-0V-jMd" id="UHA-t8-kQl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Below reason why your Credit Score not available" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0M-6L-Qmf">
+                    <rect key="frame" x="90" y="237" width="195" height="31"/>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="11"/>
+                    <color key="textColor" red="0.18823529410000001" green="0.25882352939999997" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1kb-53-Nmf">
+                    <rect key="frame" x="15" y="324" width="345" height="140"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="provideInfo" translatesAutoresizingMaskIntoConstraints="NO" id="Kj9-fl-tfz">
+                            <rect key="frame" x="16" y="24" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="1kq-i0-IAE"/>
+                                <constraint firstAttribute="width" constant="48" id="wUQ-cP-Qil"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provided information is not updated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lms-OH-xMn">
+                            <rect key="frame" x="79" y="24" width="218.5" height="17"/>
+                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>
+                            <color key="textColor" red="0.18823529410000001" green="0.25882352939999997" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name, contact details &amp; PAN provided is not matched" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mfl-ff-nhL">
+                            <rect key="frame" x="79" y="46" width="193" height="31"/>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="11"/>
+                            <color key="textColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NK6-0V-jMd">
+                            <rect key="frame" x="103.5" y="99" width="138" height="29"/>
+                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>
+                            <state key="normal" title="UPDATE INFORMATIONS">
+                                <color key="titleColor" red="0.074509803920000006" green="0.32156862749999998" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="NK6-0V-jMd" firstAttribute="top" secondItem="Mfl-ff-nhL" secondAttribute="bottom" constant="22" id="0yN-bV-85g"/>
+                        <constraint firstAttribute="height" constant="140" id="63a-VH-YfL"/>
+                        <constraint firstItem="lms-OH-xMn" firstAttribute="leading" secondItem="Kj9-fl-tfz" secondAttribute="trailing" constant="15" id="Qku-WF-Bc8"/>
+                        <constraint firstItem="Kj9-fl-tfz" firstAttribute="leading" secondItem="1kb-53-Nmf" secondAttribute="leading" constant="16" id="VDP-Ar-Yk0"/>
+                        <constraint firstItem="Kj9-fl-tfz" firstAttribute="top" secondItem="1kb-53-Nmf" secondAttribute="top" constant="24" id="ZF0-Mh-aGy"/>
+                        <constraint firstItem="lms-OH-xMn" firstAttribute="top" secondItem="1kb-53-Nmf" secondAttribute="top" constant="24" id="ew2-Gv-Ym6"/>
+                        <constraint firstItem="Mfl-ff-nhL" firstAttribute="top" secondItem="lms-OH-xMn" secondAttribute="bottom" constant="5" id="kC0-yc-Via"/>
+                        <constraint firstItem="Mfl-ff-nhL" firstAttribute="leading" secondItem="Kj9-fl-tfz" secondAttribute="trailing" constant="15" id="oV1-vP-v7I"/>
+                        <constraint firstItem="NK6-0V-jMd" firstAttribute="centerX" secondItem="1kb-53-Nmf" secondAttribute="centerX" id="vzZ-uQ-5ST"/>
+                        <constraint firstAttribute="trailing" secondItem="Mfl-ff-nhL" secondAttribute="trailing" constant="73" id="zzz-vu-GO3"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Could not get your Credit Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIU-BE-SDb">
+                    <rect key="frame" x="60" y="207" width="255" height="23"/>
+                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
+                    <color key="textColor" red="0.18823529410000001" green="0.25882352939999997" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applycc" translatesAutoresizingMaskIntoConstraints="NO" id="Obl-sG-38d">
+                    <rect key="frame" x="158.5" y="97" width="58" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="K40-b8-r8B"/>
+                        <constraint firstAttribute="width" constant="58" id="X8H-1q-KKy"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sIU-BE-SDb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="02F-bH-3cV"/>
+                <constraint firstItem="I0M-6L-Qmf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="90" id="1hb-Np-UEL"/>
+                <constraint firstAttribute="trailing" secondItem="1kb-53-Nmf" secondAttribute="trailing" constant="15" id="3AV-Rb-atZ"/>
+                <constraint firstItem="1kb-53-Nmf" firstAttribute="top" secondItem="I0M-6L-Qmf" secondAttribute="bottom" constant="56" id="NF2-IO-MQN"/>
+                <constraint firstItem="I0M-6L-Qmf" firstAttribute="top" secondItem="sIU-BE-SDb" secondAttribute="bottom" constant="7" id="Vsg-Bq-d11"/>
+                <constraint firstItem="Obl-sG-38d" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="77" id="Z1u-DD-Gzy"/>
+                <constraint firstItem="Obl-sG-38d" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bqM-gr-sB4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="I0M-6L-Qmf" secondAttribute="trailing" constant="90" id="h27-Ki-kAe"/>
+                <constraint firstItem="sIU-BE-SDb" firstAttribute="top" secondItem="Obl-sG-38d" secondAttribute="bottom" constant="40" id="uw9-uA-ZF9"/>
+                <constraint firstItem="1kb-53-Nmf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="ynZ-Hv-eWb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="applycc" width="59" height="70.5"/>
+        <image name="provideInfo" width="48" height="48"/>
+    </resources>
+</document>

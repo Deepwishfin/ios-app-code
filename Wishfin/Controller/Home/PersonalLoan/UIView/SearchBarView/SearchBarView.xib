@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProText-Regular.ttf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchBarView" customModule="Wishfin" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelBtn" destination="mbO-FU-CtY" id="RPU-aB-lg9"/>
+                <outlet property="searchTextField" destination="Ffn-Yl-hTU" id="1p8-xH-Xh5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="t5G-Df-s2V">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="17.5" translatesAutoresizingMaskIntoConstraints="NO" id="2XP-rw-pIt">
+                    <rect key="frame" x="15" y="0.0" width="345" height="44"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="searchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="o4L-65-6nu">
+                            <rect key="frame" x="0.0" y="12.5" width="19" height="19"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="19" id="7Ik-9l-rXf"/>
+                                <constraint firstAttribute="height" constant="19" id="rWu-E4-ErY"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ffn-Yl-hTU">
+                            <rect key="frame" x="36.5" y="12.5" width="276" height="19"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="textFieldDidChange:" destination="-1" eventType="editingChanged" id="IjU-34-HIt"/>
+                                <outlet property="delegate" destination="-1" id="QBY-i0-7M3"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbO-FU-CtY">
+                            <rect key="frame" x="330" y="11" width="15" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="9kX-Px-3eh"/>
+                                <constraint firstAttribute="height" constant="22" id="E8a-bJ-hog"/>
+                            </constraints>
+                            <state key="normal" image="cancel (1)"/>
+                            <connections>
+                                <action selector="tappedOnCancelAction:" destination="-1" eventType="touchUpInside" id="YDW-aE-Ghc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FbC-Rm-XVn">
+                    <rect key="frame" x="15" y="36" width="345" height="2"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="hI8-qv-9Sc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="2XP-rw-pIt" firstAttribute="leading" secondItem="4Kr-EO-ThM" secondAttribute="leading" constant="15" id="497-aK-5lD"/>
+                <constraint firstItem="2XP-rw-pIt" firstAttribute="top" secondItem="4Kr-EO-ThM" secondAttribute="top" id="MZh-cA-HGg"/>
+                <constraint firstItem="4Kr-EO-ThM" firstAttribute="trailing" secondItem="2XP-rw-pIt" secondAttribute="trailing" constant="15" id="Vux-NZ-Gha"/>
+                <constraint firstItem="4Kr-EO-ThM" firstAttribute="bottom" secondItem="2XP-rw-pIt" secondAttribute="bottom" id="j8c-lg-lT6"/>
+                <constraint firstItem="FbC-Rm-XVn" firstAttribute="trailing" secondItem="2XP-rw-pIt" secondAttribute="trailing" id="thS-ct-TPt"/>
+                <constraint firstItem="FbC-Rm-XVn" firstAttribute="leading" secondItem="2XP-rw-pIt" secondAttribute="leading" id="xkC-gK-6U0"/>
+                <constraint firstAttribute="bottom" secondItem="FbC-Rm-XVn" secondAttribute="bottom" constant="6" id="yXI-dO-UDK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="4Kr-EO-ThM"/>
+            <point key="canvasLocation" x="35" y="179"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cancel (1)" width="32" height="32"/>
+        <image name="searchIcon" width="32" height="32"/>
+    </resources>
+</document>

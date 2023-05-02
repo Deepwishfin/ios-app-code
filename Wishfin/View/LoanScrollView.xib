@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoanScrollView" customModule="Wishfin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="181"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Getting a new loan for" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Faj-Qq-iKE">
+                    <rect key="frame" x="91" y="24" width="143" height="17"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" red="0.1803921568627451" green="0.2196078431372549" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50,000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3KR-JH-gtJ">
+                    <rect key="frame" x="126" y="51" width="73.5" height="29"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50,00,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mav-qy-dcs">
+                    <rect key="frame" x="256.5" y="156" width="53.5" height="14"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                    <color key="textColor" red="0.50588235294117645" green="0.50588235294117645" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqh-wC-cS7">
+                    <rect key="frame" x="15" y="157" width="37" height="14"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                    <color key="textColor" red="0.50588235294117645" green="0.50588235294117645" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20000" minValue="0.0" maxValue="5000000" translatesAutoresizingMaskIntoConstraints="NO" id="Smq-Gt-pgE">
+                    <rect key="frame" x="13" y="111" width="299" height="31"/>
+                    <color key="tintColor" red="0.074509803921568626" green="0.32156862745098036" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="maximumTrackTintColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="thumbTintColor" red="0.074509803921568626" green="0.32156862745098036" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </slider>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3KR-JH-gtJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="41z-cl-MUO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Smq-Gt-pgE" secondAttribute="trailing" constant="15" id="7lm-Xs-Y2u"/>
+                <constraint firstItem="mav-qy-dcs" firstAttribute="top" secondItem="Smq-Gt-pgE" secondAttribute="bottom" constant="15" id="9e0-ZM-rld"/>
+                <constraint firstItem="Wqh-wC-cS7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="Pce-FG-MhN"/>
+                <constraint firstItem="Wqh-wC-cS7" firstAttribute="top" secondItem="Smq-Gt-pgE" secondAttribute="bottom" constant="16" id="QMB-5w-HXz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Wqh-wC-cS7" secondAttribute="bottom" constant="10" id="RGd-RQ-ckI"/>
+                <constraint firstItem="Smq-Gt-pgE" firstAttribute="top" secondItem="3KR-JH-gtJ" secondAttribute="bottom" constant="31" id="dDd-gp-sQe"/>
+                <constraint firstAttribute="trailing" secondItem="mav-qy-dcs" secondAttribute="trailing" constant="15" id="eAd-E4-e2v"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mav-qy-dcs" secondAttribute="bottom" constant="11" id="egd-0q-mXv"/>
+                <constraint firstItem="Faj-Qq-iKE" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="24" id="fuc-U8-ZPg"/>
+                <constraint firstItem="Smq-Gt-pgE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="hCW-jK-YWH"/>
+                <constraint firstItem="Faj-Qq-iKE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jfS-dY-UaG"/>
+                <constraint firstItem="3KR-JH-gtJ" firstAttribute="top" secondItem="Faj-Qq-iKE" secondAttribute="bottom" constant="10" id="nTO-se-fAl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="loanSlider" destination="Smq-Gt-pgE" id="5s7-vs-1GR"/>
+                <outlet property="maxPriceLabel" destination="mav-qy-dcs" id="CbX-cr-fS8"/>
+                <outlet property="minPriceLabel" destination="Wqh-wC-cS7" id="p84-TT-Ixm"/>
+                <outlet property="priceLabel" destination="3KR-JH-gtJ" id="Ofm-qz-p01"/>
+                <outlet property="titleLabel" destination="Faj-Qq-iKE" id="gyv-Lg-ACl"/>
+            </connections>
+            <point key="canvasLocation" x="-198.40000000000001" y="85.007496251874073"/>
+        </view>
+    </objects>
+</document>

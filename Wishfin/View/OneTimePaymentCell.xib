@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OneTimePaymentCell" rowHeight="60" id="KGk-i7-Jjw" customClass="OneTimePaymentCell" customModule="Wishfin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Axis Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fou-v3-h6t">
+                        <rect key="frame" x="69" y="18" width="59" height="17"/>
+                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="12"/>
+                        <color key="textColor" red="0.1803921568627451" green="0.2196078431372549" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Loan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iA-2p-zoG">
+                        <rect key="frame" x="69" y="40" width="56.5" height="14"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                        <color key="textColor" red="0.50588235294117645" green="0.50588235294117645" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16 Missed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m64-mN-Vpa">
+                        <rect key="frame" x="266.5" y="31" width="38.5" height="11.5"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="8"/>
+                        <color key="textColor" red="0.50588235294117645" green="0.50588235294117645" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <webView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DYj-zI-bAI">
+                        <rect key="frame" x="15" y="15" width="44" height="44"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="8sQ-lp-hOo"/>
+                            <constraint firstAttribute="width" constant="44" id="aPS-lP-EBR"/>
+                        </constraints>
+                        <dataDetectorType key="dataDetectorTypes"/>
+                    </webView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="m64-mN-Vpa" secondAttribute="trailing" constant="15" id="LXI-oV-qwb"/>
+                    <constraint firstItem="Fou-v3-h6t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="QnK-FP-pdB"/>
+                    <constraint firstItem="DYj-zI-bAI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="aie-oA-Jhu"/>
+                    <constraint firstItem="1iA-2p-zoG" firstAttribute="top" secondItem="Fou-v3-h6t" secondAttribute="bottom" constant="5" id="fc2-TS-yv4"/>
+                    <constraint firstItem="Fou-v3-h6t" firstAttribute="leading" secondItem="DYj-zI-bAI" secondAttribute="trailing" constant="10" id="fw4-yT-fVS"/>
+                    <constraint firstItem="DYj-zI-bAI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="hPs-a0-UN2"/>
+                    <constraint firstItem="m64-mN-Vpa" firstAttribute="centerY" secondItem="DYj-zI-bAI" secondAttribute="centerY" id="ov7-8e-Tre"/>
+                    <constraint firstAttribute="bottom" secondItem="DYj-zI-bAI" secondAttribute="bottom" constant="10" id="seS-Hk-lzN"/>
+                    <constraint firstItem="1iA-2p-zoG" firstAttribute="leading" secondItem="DYj-zI-bAI" secondAttribute="trailing" constant="10" id="zh1-WE-K80"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bankLabel" destination="Fou-v3-h6t" id="BSL-Pl-iwb"/>
+                <outlet property="imgWebView" destination="DYj-zI-bAI" id="CQn-sT-iw1"/>
+                <outlet property="loanLabel" destination="1iA-2p-zoG" id="zwO-R4-Xqf"/>
+                <outlet property="missedLabel" destination="m64-mN-Vpa" id="gfc-Jf-4Aj"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="164.39732142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

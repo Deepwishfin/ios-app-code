@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ApplyCCView" customModule="Wishfin" customModuleProvider="target">
+            <connections>
+                <outlet property="bottmView" destination="nsQ-mM-F8w" id="lrO-WF-1Og"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="3kR-gS-6Vm"/>
+                <outlet property="getCCButton" destination="Kpu-jU-beo" id="hyM-O6-Lra"/>
+                <outlet property="logoutButton" destination="FvC-2N-wVY" id="mp4-qd-Xr6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applycc" translatesAutoresizingMaskIntoConstraints="NO" id="r4u-5b-6p3">
+                    <rect key="frame" x="158.5" y="77" width="58" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="58" id="fSe-SZ-6nL"/>
+                        <constraint firstAttribute="height" constant="70" id="kv1-NW-4uf"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Could not get your Credit Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66t-FI-ucz">
+                    <rect key="frame" x="60" y="187" width="255" height="23"/>
+                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
+                    <color key="textColor" red="0.18823529411764706" green="0.25882352941176467" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Below reason why your Credit Score not available" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w53-wb-kHu">
+                    <rect key="frame" x="90" y="217" width="195" height="31"/>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="11"/>
+                    <color key="textColor" red="0.18823529411764706" green="0.25882352941176467" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsQ-mM-F8w">
+                    <rect key="frame" x="15" y="304" width="345" height="140"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditYoung" translatesAutoresizingMaskIntoConstraints="NO" id="9EQ-1o-fd8">
+                            <rect key="frame" x="16" y="24" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="48" id="aaM-oa-YAD"/>
+                                <constraint firstAttribute="height" constant="48" id="kQD-GP-Xd2"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You seem to be Credit-young" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCX-b2-z4i">
+                            <rect key="frame" x="79" y="24" width="179" height="17"/>
+                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>
+                            <color key="textColor" red="0.18823529410000001" green="0.25882352939999997" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No worries. We can help you build a good Credit History" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jP-gr-TTr">
+                            <rect key="frame" x="79" y="46" width="193" height="31"/>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="11"/>
+                            <color key="textColor" red="0.50588235294117645" green="0.50588235294117645" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kpu-jU-beo">
+                            <rect key="frame" x="85.5" y="99" width="174" height="29"/>
+                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>
+                            <state key="normal" title="GET YOUR FIRST CREDIT CARD">
+                                <color key="titleColor" red="0.074509803921568626" green="0.32156862745098036" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Kpu-jU-beo" firstAttribute="top" secondItem="8jP-gr-TTr" secondAttribute="bottom" constant="22" id="1dY-eH-mE6"/>
+                        <constraint firstItem="9EQ-1o-fd8" firstAttribute="top" secondItem="nsQ-mM-F8w" secondAttribute="top" constant="24" id="23a-Bj-WAI"/>
+                        <constraint firstAttribute="height" constant="140" id="4Z2-uY-U48"/>
+                        <constraint firstItem="aCX-b2-z4i" firstAttribute="leading" secondItem="9EQ-1o-fd8" secondAttribute="trailing" constant="15" id="8dK-mf-kIq"/>
+                        <constraint firstItem="Kpu-jU-beo" firstAttribute="centerX" secondItem="nsQ-mM-F8w" secondAttribute="centerX" id="HNi-Mz-UkJ"/>
+                        <constraint firstItem="9EQ-1o-fd8" firstAttribute="leading" secondItem="nsQ-mM-F8w" secondAttribute="leading" constant="16" id="JpM-5H-et7"/>
+                        <constraint firstAttribute="trailing" secondItem="8jP-gr-TTr" secondAttribute="trailing" constant="73" id="L6d-2i-7Ns"/>
+                        <constraint firstItem="aCX-b2-z4i" firstAttribute="top" secondItem="nsQ-mM-F8w" secondAttribute="top" constant="24" id="PPN-27-Kbq"/>
+                        <constraint firstItem="8jP-gr-TTr" firstAttribute="top" secondItem="aCX-b2-z4i" secondAttribute="bottom" constant="5" id="ctE-pd-1fQ"/>
+                        <constraint firstItem="8jP-gr-TTr" firstAttribute="leading" secondItem="9EQ-1o-fd8" secondAttribute="trailing" constant="15" id="gj0-yk-Ed3"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try with Different Credentials." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjq-1r-oiu">
+                    <rect key="frame" x="75" y="630" width="177.5" height="17"/>
+                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>
+                    <color key="textColor" red="0.18823529410000001" green="0.25882352939999997" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvC-2N-wVY">
+                    <rect key="frame" x="257.5" y="622.5" width="48" height="32"/>
+                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                    <state key="normal" title="Logout">
+                        <color key="titleColor" red="0.074509803920000006" green="0.32156862749999998" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="66t-FI-ucz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7BZ-iD-350"/>
+                <constraint firstItem="w53-wb-kHu" firstAttribute="top" secondItem="66t-FI-ucz" secondAttribute="bottom" constant="7" id="BFX-fg-NGA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="w53-wb-kHu" secondAttribute="trailing" constant="90" id="Bwr-Ih-q9d"/>
+                <constraint firstItem="r4u-5b-6p3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="77" id="F9q-za-lCo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="jjq-1r-oiu" secondAttribute="bottom" constant="20" id="Rg9-gG-YOB"/>
+                <constraint firstItem="FvC-2N-wVY" firstAttribute="centerY" secondItem="jjq-1r-oiu" secondAttribute="centerY" id="SL2-4l-69u"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nsQ-mM-F8w" secondAttribute="trailing" constant="15" id="UXv-OM-gaZ"/>
+                <constraint firstItem="nsQ-mM-F8w" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="YXP-gp-Lnn"/>
+                <constraint firstItem="jjq-1r-oiu" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-24" id="gBA-58-krJ"/>
+                <constraint firstItem="w53-wb-kHu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="90" id="gXY-3R-cyb"/>
+                <constraint firstItem="66t-FI-ucz" firstAttribute="top" secondItem="r4u-5b-6p3" secondAttribute="bottom" constant="40" id="hwv-Hn-Ev7"/>
+                <constraint firstItem="r4u-5b-6p3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="iiL-hm-Lr7"/>
+                <constraint firstItem="FvC-2N-wVY" firstAttribute="leading" secondItem="jjq-1r-oiu" secondAttribute="trailing" constant="5" id="p7C-AC-3gN"/>
+                <constraint firstItem="nsQ-mM-F8w" firstAttribute="top" secondItem="w53-wb-kHu" secondAttribute="bottom" constant="56" id="tEU-gp-zZ9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="applycc" width="59" height="70.5"/>
+        <image name="creditYoung" width="48" height="48"/>
+    </resources>
+</document>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UCq-xv-GTD">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Wishfin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDK-gp-lbN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="WPC-69-mnR"/>
+                                </connections>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2T-Xu-n1e">
+                                <rect key="frame" x="20" y="603" width="325" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.74117647058823533" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="SU6-hv-erj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>
+                                <state key="normal" title="SIGN IN"/>
+                                <connections>
+                                    <action selector="loginBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fWp-Rv-KDs"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="9bG-OZ-cFN">
+                                <rect key="frame" x="168" y="546" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.69019607843137254" green="0.72941176470588232" blue="0.78823529411764703" alpha="0.40495708629999999" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.74117647058823533" blue="0.66666666666666663" alpha="0.40495708629999999" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9bG-OZ-cFN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C5S-7w-Rvy"/>
+                            <constraint firstItem="GDK-gp-lbN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="I1p-02-Fn0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S2T-Xu-n1e" secondAttribute="trailing" constant="30" id="L3i-9e-B58"/>
+                            <constraint firstItem="S2T-Xu-n1e" firstAttribute="top" secondItem="9bG-OZ-cFN" secondAttribute="bottom" constant="20" id="SdI-S0-JB2"/>
+                            <constraint firstItem="GDK-gp-lbN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="V4U-yM-Lqg"/>
+                            <constraint firstItem="S2T-Xu-n1e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ig6-y3-ESW"/>
+                            <constraint firstItem="GDK-gp-lbN" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="tKw-s4-Bwy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="S2T-Xu-n1e" secondAttribute="bottom" constant="20" id="tsW-xL-GdM"/>
+                            <constraint firstItem="GDK-gp-lbN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="yGD-kO-acw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7hc-Zy-lnB"/>
+                    <connections>
+                        <outlet property="pageControl" destination="9bG-OZ-cFN" id="Y4h-nO-PNf"/>
+                        <outlet property="scrollview" destination="GDK-gp-lbN" id="sDG-iD-pVL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077.5999999999999" y="112.89355322338831"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JJh-Lm-XaW">
+            <objects>
+                <navigationController storyboardIdentifier="dashboardVC" automaticallyAdjustsScrollViewInsets="NO" id="UCq-xv-GTD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IWu-Vx-8b4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aIk-Xd-hAX" kind="relationship" relationship="rootViewController" id="aUv-UE-AKh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ytm-0F-71r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="326" y="113"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="OEe-WB-aQA">
+            <objects>
+                <tabBarController id="aIk-Xd-hAX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9yL-BY-teS"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="0.0" height="0.0"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="mMQ-4T-TYC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.85882352941176465" green="0.85882352941176465" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.0" green="0.74117647058823533" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1BH-7c-x3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1881" y="113"/>
+        </scene>
+    </scenes>
+</document>

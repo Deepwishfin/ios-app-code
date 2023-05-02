@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HScrollView" customModule="Wishfin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="104"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EfW-Is-zlR" customClass="UICircularProgressRing" customModule="UICircularProgressRing">
+                    <rect key="frame" x="14" y="10" width="84" height="84"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="84" id="aQd-OI-URh"/>
+                        <constraint firstAttribute="width" constant="84" id="s7n-1U-JKg"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="value">
+                            <real key="value" value="38"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
+                            <real key="value" value="270"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="innerRingWidth">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="outerRingColor">
+                            <color key="value" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="innerRingColor">
+                            <color key="value" red="0.0" green="0.74117647060000003" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="innerRingSpacing">
+                            <real key="value" value="-8"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="outerRingWidth">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great News!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMT-L6-Lr3">
+                    <rect key="frame" x="116" y="22" width="82" height="17"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keeping credit utilization under 40%, impact your CIBIL score positively" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdf-Xe-nrf">
+                    <rect key="frame" x="116" y="45" width="154" height="36"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="10"/>
+                    <color key="textColor" red="0.50588235294117645" green="0.50588235294117645" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pdf-Xe-nrf" firstAttribute="leading" secondItem="EfW-Is-zlR" secondAttribute="trailing" constant="18" id="5HY-RD-DXW"/>
+                <constraint firstItem="EfW-Is-zlR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="14" id="C3k-C0-CPO"/>
+                <constraint firstItem="EfW-Is-zlR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="GqQ-Ut-823"/>
+                <constraint firstItem="pdf-Xe-nrf" firstAttribute="top" secondItem="TMT-L6-Lr3" secondAttribute="bottom" constant="6" id="Z7a-nf-78w"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pdf-Xe-nrf" secondAttribute="trailing" constant="10" id="dkz-5i-tU9"/>
+                <constraint firstItem="TMT-L6-Lr3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="22" id="o9H-wj-Qzj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="EfW-Is-zlR" secondAttribute="bottom" constant="10" id="pKn-Km-6zn"/>
+                <constraint firstItem="TMT-L6-Lr3" firstAttribute="leading" secondItem="EfW-Is-zlR" secondAttribute="trailing" constant="18" id="zG5-qK-ixx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="detailLabel" destination="pdf-Xe-nrf" id="39N-dm-dTy"/>
+                <outlet property="titleLabel" destination="TMT-L6-Lr3" id="Fvm-It-6hc"/>
+            </connections>
+            <point key="canvasLocation" x="-86.400000000000006" y="-137.6311844077961"/>
+        </view>
+    </objects>
+</document>

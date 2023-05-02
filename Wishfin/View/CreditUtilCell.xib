@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CreditUtilCell" rowHeight="70" id="KGk-i7-Jjw" customClass="CreditUtilCell" customModule="Wishfin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Integrated Series" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2C-O2-gvP">
+                        <rect key="frame" x="69" y="18" width="104.5" height="17"/>
+                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="12"/>
+                        <color key="textColor" red="0.1803921568627451" green="0.2196078431372549" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcC-Rh-MXf">
+                        <rect key="frame" x="261.5" y="21" width="28.5" height="20"/>
+                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
+                        <color key="textColor" red="0.1803921568627451" green="0.2196078431372549" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wheel O wheel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbt-O5-mP7">
+                        <rect key="frame" x="69" y="40" width="74" height="14"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                        <color key="textColor" red="0.50588235294117645" green="0.50588235294117645" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UTILIZED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPe-hM-vbe">
+                        <rect key="frame" x="251.5" y="41" width="48.5" height="17"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>
+                        <color key="textColor" red="0.1803921568627451" green="0.2196078431372549" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <webView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wCq-aZ-8dP">
+                        <rect key="frame" x="15" y="15" width="44" height="44"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="2Ng-RC-3GP"/>
+                            <constraint firstAttribute="width" constant="44" id="6ki-NQ-frS"/>
+                        </constraints>
+                        <dataDetectorType key="dataDetectorTypes"/>
+                    </webView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tcC-Rh-MXf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="06M-u7-YIX"/>
+                    <constraint firstItem="wCq-aZ-8dP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="6aQ-3E-dYt"/>
+                    <constraint firstItem="b2C-O2-gvP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="7NQ-ZR-u0x"/>
+                    <constraint firstAttribute="trailing" secondItem="KPe-hM-vbe" secondAttribute="trailing" constant="20" id="7VH-gx-vQE"/>
+                    <constraint firstItem="b2C-O2-gvP" firstAttribute="leading" secondItem="wCq-aZ-8dP" secondAttribute="trailing" constant="10" id="AYI-pj-1Dh"/>
+                    <constraint firstAttribute="bottom" secondItem="wCq-aZ-8dP" secondAttribute="bottom" constant="10" id="Nf6-qy-ZxR"/>
+                    <constraint firstItem="wCq-aZ-8dP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="WN2-dQ-TbP"/>
+                    <constraint firstItem="fbt-O5-mP7" firstAttribute="top" secondItem="b2C-O2-gvP" secondAttribute="bottom" constant="5" id="aDt-q5-z9Y"/>
+                    <constraint firstItem="tcC-Rh-MXf" firstAttribute="centerX" secondItem="KPe-hM-vbe" secondAttribute="centerX" id="du4-4g-0MX"/>
+                    <constraint firstItem="fbt-O5-mP7" firstAttribute="leading" secondItem="wCq-aZ-8dP" secondAttribute="trailing" constant="10" id="fpX-Os-CA2"/>
+                    <constraint firstItem="KPe-hM-vbe" firstAttribute="top" secondItem="tcC-Rh-MXf" secondAttribute="bottom" id="hVz-ON-0da"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="balanceLabel" destination="fbt-O5-mP7" id="O35-BI-76U"/>
+                <outlet property="bankLabel" destination="b2C-O2-gvP" id="ipB-9W-cJz"/>
+                <outlet property="imgWebView" destination="wCq-aZ-8dP" id="o7Q-Iq-Wmg"/>
+                <outlet property="utilizeLabel" destination="tcC-Rh-MXf" id="ayf-TX-9dQ"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="155.69196428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TitleCell" id="KGk-i7-Jjw" customClass="TitleCell" customModule="Wishfin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="63.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select the credit card (last 4 digits) that is issued by ICICI BANK?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSe-38-O5r">
+                        <rect key="frame" x="0.0" y="0.0" width="276" height="63.5"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                        <color key="textColor" red="0.18823529411764706" green="0.25882352941176467" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down" translatesAutoresizingMaskIntoConstraints="NO" id="jf5-4b-3e2">
+                        <rect key="frame" x="286" y="20" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="ZwV-Ry-QJc"/>
+                            <constraint firstAttribute="width" constant="24" id="tRH-v2-Pky"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hqn-0i-RY3">
+                        <rect key="frame" x="0.0" y="10" width="320" height="43.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Hqn-0i-RY3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="0Aj-tH-AUd"/>
+                    <constraint firstAttribute="bottom" secondItem="dSe-38-O5r" secondAttribute="bottom" id="AUb-ap-q9b"/>
+                    <constraint firstItem="jf5-4b-3e2" firstAttribute="leading" secondItem="dSe-38-O5r" secondAttribute="trailing" constant="10" id="FIK-0j-ePY"/>
+                    <constraint firstAttribute="trailing" secondItem="jf5-4b-3e2" secondAttribute="trailing" constant="10" id="KEI-Ia-ybo"/>
+                    <constraint firstItem="jf5-4b-3e2" firstAttribute="centerY" secondItem="dSe-38-O5r" secondAttribute="centerY" id="P9V-So-viP"/>
+                    <constraint firstItem="Hqn-0i-RY3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WnH-RF-hK7"/>
+                    <constraint firstItem="dSe-38-O5r" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Zaz-a7-eJz"/>
+                    <constraint firstAttribute="bottom" secondItem="Hqn-0i-RY3" secondAttribute="bottom" constant="10" id="aOO-U3-KLw"/>
+                    <constraint firstAttribute="trailing" secondItem="Hqn-0i-RY3" secondAttribute="trailing" id="cxf-8c-J0n"/>
+                    <constraint firstItem="dSe-38-O5r" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wlY-pe-cPX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="arrowImage" destination="jf5-4b-3e2" id="0uz-7Y-HFq"/>
+                <outlet property="openCloseBtn" destination="Hqn-0i-RY3" id="7mw-1c-p0s"/>
+                <outlet property="titleLabel" destination="dSe-38-O5r" id="V4q-Oa-H7i"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="153.82308845577214"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="down" width="24" height="24"/>
+    </resources>
+</document>

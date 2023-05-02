@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SecureCell" rowHeight="80" id="KGk-i7-Jjw" customClass="SecureCell" customModule="Wishfin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="87.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kotak Mahindra Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFr-ic-C1I">
+                        <rect key="frame" x="69" y="18" width="131.5" height="17"/>
+                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="12"/>
+                        <color key="textColor" red="0.1803921568627451" green="0.2196078431372549" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opened on: 23 Jan 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gM-wH-y9o">
+                        <rect key="frame" x="69" y="40" width="117.5" height="14"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                        <color key="textColor" red="0.50588235294117645" green="0.50588235294117645" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjS-OL-y4n">
+                        <rect key="frame" x="250" y="27" width="55" height="20"/>
+                        <color key="backgroundColor" red="0.0" green="0.74117647058823533" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="9eE-J2-DDL"/>
+                            <constraint firstAttribute="height" constant="20" id="kKa-hu-bNY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="8"/>
+                        <state key="normal" title="ACTIVE">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <webView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rnb-J2-UT7">
+                        <rect key="frame" x="15" y="15" width="44" height="44"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="HQ9-BE-6Gt"/>
+                            <constraint firstAttribute="width" constant="44" id="qSv-NL-xEr"/>
+                        </constraints>
+                        <dataDetectorType key="dataDetectorTypes"/>
+                    </webView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="tjS-OL-y4n" secondAttribute="trailing" constant="15" id="Cob-MM-awV"/>
+                    <constraint firstItem="tjS-OL-y4n" firstAttribute="centerY" secondItem="Rnb-J2-UT7" secondAttribute="centerY" id="EIW-xN-qHb"/>
+                    <constraint firstItem="zFr-ic-C1I" firstAttribute="leading" secondItem="Rnb-J2-UT7" secondAttribute="trailing" constant="10" id="Hmc-yF-JOA"/>
+                    <constraint firstItem="Rnb-J2-UT7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="LfM-pk-UX7"/>
+                    <constraint firstAttribute="bottom" secondItem="Rnb-J2-UT7" secondAttribute="bottom" constant="10" id="TAh-Z5-pjU"/>
+                    <constraint firstItem="zFr-ic-C1I" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="VXx-fV-Zcl"/>
+                    <constraint firstItem="Rnb-J2-UT7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="c5a-kK-yzH"/>
+                    <constraint firstItem="5gM-wH-y9o" firstAttribute="leading" secondItem="Rnb-J2-UT7" secondAttribute="trailing" constant="10" id="cBN-og-xQD"/>
+                    <constraint firstItem="5gM-wH-y9o" firstAttribute="top" secondItem="zFr-ic-C1I" secondAttribute="bottom" constant="5" id="vfp-u1-8o7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="activeButton" destination="tjS-OL-y4n" id="Ufd-ch-tdP"/>
+                <outlet property="bankLabel" destination="zFr-ic-C1I" id="iiz-f8-f5R"/>
+                <outlet property="imgWebView" destination="Rnb-J2-UT7" id="fkU-tD-R0K"/>
+                <outlet property="timeLabel" destination="5gM-wH-y9o" id="tuW-Is-yuo"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="185.49107142857142"/>
+        </tableViewCell>
+    </objects>
+</document>
